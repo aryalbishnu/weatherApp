@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Weather-app </title>
+    {{>headLink}}
+  </head>
+<body>
+    <!--Nav bar-->
+    {{>navbar}}
+
+    <!--Main Header-->
+    <div class="container-fluid main_header" >
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                    <div class="main_content">
+                        <form class="temp_form">
+                            <input type="text" id="cityName" placeholder="Enter your city" autocomplete="off" />
+                            <input type="submit" value="search" id="submit" />
+                        </form>
+                    </div>
+
+                    <div class="tempInformation">
+                        <div class="top_layer">
+                            <p id="day">Tue</p>
+                            <p id="today_date">7 Jan</p>
+                        </div>
+                        <div class="main_layer">
+                            <p id="city_name">Get Output Here</p>
+                            <div class="middle_layer data_hide" id="dataHide">
+                                <p><span id="temp">0</span>&deg;C</p>
+                                <p id="temp_status"><i class="fa fa-cloud" aria-hidden="true"></i></p>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Footer code-->
+    {{>footer}}
+    <script src="js/main.js"></script>
+</body>
+</html>

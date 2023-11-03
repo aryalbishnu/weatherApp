@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Weather-app error</title>
+    {{>headLink}}
+</head>
+<body>
+    <!--Nav bar-->
+    {{>navbar}}
+
+    <!--Main Header-->
+    <div class="container-fluid main_header" >
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    <div class="col-md-10 col-12 main_header_left_err align-items-center">
+                      <figure class="errImage">
+                        <img src="images/404.jpg" alt="profile">
+                      </figure>  
+
+                        <p>Welcomt to weather app</p>
+                        <h1><span>{{errorMessage}}</span> Check Url</h1>
+                        <a href="/"><button class="btn btn-outline-primary">Go Back</button></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer code-->
+    {{>footer}}
+</body>
+</html>
